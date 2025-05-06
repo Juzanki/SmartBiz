@@ -3,29 +3,45 @@ logs
 *.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
+# Build output
+dist/
+build/
+out/
+coverage/
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.development
+
+# Python virtualenv & cache
+venv/
+__pycache__/
+*.py[cod]
+*.so
+
+# Node
+node_modules/
+
+# Editor
+.vscode/
+.idea/
+
+# System
 .DS_Store
-dist
-dist-ssr
-coverage
-*.local
+Thumbs.db
 
-/cypress/videos/
-/cypress/screenshots/
+# Test videos/screenshots
+cypress/videos/
+cypress/screenshots/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Others
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-
 *.tsbuildinfo
-.env
